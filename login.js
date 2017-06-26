@@ -5,8 +5,8 @@ function login(form) {
     user_name = form.username.value || "Anonymous";
     var phone = window.phone = PHONE({
         number        : user_name, // listen on username line else Anonymous
-        publish_key   : 'your_pub_key',
-        subscribe_key : 'your_sub_key',
+        publish_key   : 'pub-c-c406fa21-90f1-4ee7-ab8a-50f286d1f169',
+        subscribe_key : 'sub-c-ca4a93ac-8c2d-11e5-bf00-02ee2ddab7fe',
         datachannels  : true,  // Enable Data Channels
     }); 
     phone.ready(function(){ form.username.style.background="#55ff5b"; form.login_submit.hidden="true"; });

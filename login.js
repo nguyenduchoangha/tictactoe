@@ -23,3 +23,9 @@ function makeCall(form){
     else phone.dial(form.number.value);
     return false;
 }
+
+function end(){
+    if (!window.phone) return;
+    window.phone.hangup();
+    video_hold.hidden = true;
+}

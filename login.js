@@ -15,6 +15,7 @@ function login(form) {
         session.ended(function(session) { video_out.innerHTML=''; });
     });
     // Prepare Data Channel
+    phone.datachannel(onDataReceived);
     return false;
 }
 
